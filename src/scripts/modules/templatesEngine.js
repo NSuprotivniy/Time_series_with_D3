@@ -10,26 +10,24 @@ function getTemplateRootNode(scriptId) {
 }
 
 var templatesEngine = {
-    todoItem: function (data) {
-        var root = getTemplateRootNode('todoItemTemplate');
+    Value: function (valueData) {
+        var root = getTemplateRootNode('ValueTemplate');
 
-        var markReady = root.querySelector('.js-todo-item_mark-ready');
-        var removeAction = root.querySelector('.js-todo-item_remove-action');
-        var text = root.querySelector('.js-todo-item_text');
-
-        if (data.text) {
-            text.innerText = data.text;
-        }
-
-        if (data.isReady) {
-            markReady.checked = true;
-        }
+        var timeSelector = root.querySelector('.js-values-list-item-time');
+        var valueSelector = root.querySelector('.js-values-list-item-value');
+        var removeSelector = root.querySelector('.js-values-list-item-remove');
+        
+        var time = valueData.time;
+        var time_str = time.getMinutes() + ":" + time.getSeconds() + ":" + time.getMilliseconds();
+        
+        timeSelector.innerText = time_str;
+        valueSelector.innerText = valueData.value;
 
         return {
             root: root,
-            text: text,
-            markReady: markReady,
-            removeAction: removeAction
+            value: valueSelector,
+            time: timeSelector,
+            remove: removeSelector
         };
     }
 };

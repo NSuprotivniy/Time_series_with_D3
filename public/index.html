@@ -6,8 +6,15 @@
     <title>Todos</title>
     <script src="dist/scripts/bundle.js"></script>
 </head>
-<script type="text/html" id="todoItemTemplate">
-  
+<script type="text/html" id="ValueTemplate">
+    <div class="values-list-item">
+
+        <div class="values-list-item-time js-values-list-item-time"></div>
+        <div class="values-list-item-value js-values-list-item-value"></div>
+        <div class="values-list-item-remove"><button  class="js-values-list-item-remove" aria-label="Remove value">Remove</button></div>              
+
+    </div>
+
 </script>
 <body>
     
@@ -20,18 +27,18 @@
         <p class="control_panel-add_input-label">Data</p>
         
         <div class="control_panel-add_input">
-            <input class="control_panel-add_input js-control_panel-todo-input" placeholder="Add new value" aria-label="Add new value field" />
+            <input class="control_panel-add_input js-control_panel-input" placeholder="Add new value" aria-label="Add new value field" />
         </div>
         
         <div class="values">
             
             <p class="values-label">List of values</p>
             
-            <div class="values-list">
+            <div class="values-list js-values-list">
                 
                 <div class="values-list-item">
                     
-                    <div class="values-list-item-timeval js-values-list-item-timeval">56:01:675</div>
+                    <div class="values-list-item-time js-values-list-item-time">56:01:675</div>
                     <div class="values-list-item-value js-values-list-item-value">1</div>
                     <div class="values-list-item-remove"><button  class="js-values-list-item-remove" aria-label="Remove value">Remove</button></div>              
                     
