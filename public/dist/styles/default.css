@@ -1,3 +1,69 @@
+/* Reset.css
+---------------------------------------------------------------------------------- */
+
+html,
+body {
+  font-size: 15px;
+}
+
+textarea,
+input,
+select {
+  font-size: 15px;
+}
+
+body,
+table,
+td,
+ul,
+menu,
+li,
+div,
+span,
+img,
+a,
+form,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+textarea,
+input,
+select,
+button {
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-width: 0;
+}
+
+a {
+  cursor: pointer;
+  color: #333;
+}
+
+/* /Reset.css
+---------------------------------------------------------------------------------- */
+
 body {
   display: flex;
   height: 100vh;
@@ -127,14 +193,47 @@ input.action_target {
 }
 
 .chart {
-  width: 70%;
+  width: 80%;
   flex-direction: column;
-  background: red;
+  border-right: 1px solid black;
+}
+
+.values-label {
+  font-size: 18px;
+  margin: 8px;
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.values-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8px;
 }
 
 .control_panel {
-  width: 30%;
+  width: 20%;
   flex-direction: column;
-  background: green;
+  border-left: 1px solid black;
+}
+
+.control_panel-add_input-label {
+  font-size: 20px;
+  margin: 8px;
+}
+
+.control_panel-add_input {
+  padding: 8px;
+}
+
+.control_panel-add_input > input {
+  font-size: 15px;
+  width: 100%;
+  padding: 0;
+  height: 100%;
 }
 /*# sourceMappingURL=default.css.map */

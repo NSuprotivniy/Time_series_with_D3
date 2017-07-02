@@ -3,5 +3,7 @@
 .chart {
     width: $chart-width;
     flex-direction: column;
-    background: red;
+    
+    border-right: 1px solid black;
 }
+

@@ -1,3 +1,4 @@
+@import "reset";
 @import "layout";
 
 
@@ -7,4 +8,7 @@
 
 
 @import "project/chart/chart";
+@import "project/values/values";
+@import "project/values/values-list";
+@import "project/values/values-list-item";
 @import "project/control_panel/control_panel";

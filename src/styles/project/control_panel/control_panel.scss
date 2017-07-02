@@ -3,5 +3,24 @@
 .control_panel {
     width: $control_panel-width;
     flex-direction: column;
-    background: green;
+
+    border-left: 1px solid black;
 }
+
+    .control_panel-add_input-label {
+        font-size: $fs_x-large;
+        margin: $offset_2x;
+    }
+
+    .control_panel-add_input {
+        padding: $offset_2x;
+    }
+
+        .control_panel-add_input > input {
+            font-size: $fs_normal;
+            width: 100%;
+            padding: 0;
+            height: 100%;
+        }
+
+    
