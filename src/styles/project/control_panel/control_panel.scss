@@ -1,0 +1,7 @@
+@import "../../config/globals";
+
+.control_panel {
+    width: $control_panel-width;
+    flex-direction: column;
+    background: green;
+}

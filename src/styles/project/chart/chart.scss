@@ -1,0 +1,7 @@
+@import "../../config/globals";
+
+.chart {
+    width: $chart-width;
+    flex-direction: column;
+    background: red;
+}
