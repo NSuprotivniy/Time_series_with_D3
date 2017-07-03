@@ -1,0 +1,17 @@
+@import "../../config/globals";
+
+.side_panel {
+    width: $side_panel-width;
+    flex-direction: column;
+    background-color: $c-gray;
+    
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    
+    border: 1px solid black;
+}
+    .side_panel.__hidden {
+        width: 0%;
+    }

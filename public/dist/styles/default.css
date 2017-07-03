@@ -193,7 +193,7 @@ input.action_target {
 }
 
 .chart {
-  width: 80%;
+  width: 70%;
   flex-direction: column;
   border-right: 1px solid black;
 }
@@ -216,7 +216,7 @@ input.action_target {
 }
 
 .control_panel {
-  width: 20%;
+  width: 30%;
   flex-direction: column;
   border-left: 1px solid black;
 }
@@ -235,5 +235,20 @@ input.action_target {
   width: 100%;
   padding: 0;
   height: 100%;
+}
+
+.side_panel {
+  width: 10%;
+  flex-direction: column;
+  background-color: #666;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  border: 1px solid black;
+}
+
+.side_panel.__hidden {
+  width: 0%;
 }
 /*# sourceMappingURL=default.css.map */
